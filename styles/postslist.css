@@ -1,0 +1,48 @@
+body {
+    #height:1000px;
+}
+
+.card-design {
+    width: 40%;
+    margin: 20px 0px 0px 100px;
+    float: left;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.card-design:hover {
+    box-shadow: 15px 25px 20px 5px #888888;
+}
+
+
+.name-design {
+    background-color: white;
+    font-weight: bold;
+    color: #6f6f74;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.content-design {
+    background-color: #e8e8e8;
+    border-radius: 0px 25px 25px 0px;
+}
+
+body {
+    background-color: #ffeedd;
+}
+
+.content-heading {
+    color: #909eb6;
+}
+
+.content-body {
+    color: black;
+}
+
+.cursor {
+    cursor:pointer;
+}
+
+.delete-model {
+    width: 350px;
+}

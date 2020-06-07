@@ -1,0 +1,35 @@
+header {
+    height: 70px;
+
+}
+
+.btns {
+    float:right;
+    font-family: sans-serif;
+}
+
+button {
+    background-color: blue;
+    color:white;
+    padding: 5px 15px;
+    margin: 5px;
+}
+
+.fonts {
+    float:left;
+}
+
+.snippic {
+    font-family:'Montez', cursive;
+    font-size:30px;
+    color: blue;
+}
+
+.smallfont {
+    font-family:'Ubuntu Mono';
+    font-size:12px;
+}
+
+.input-background {
+    background-color: #efefef;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <header>
+        <div class="btns">
+            <button id="signUpBtn" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+            <button id="signInBtn" data-toggle="modal" data-target="#signinModal">Sign In</button>
+        </div>
+
+        <div class="fonts">
+            <div class="snippic">ScriBBler</div>
+            <div class="smallfont">Explore, Imagine, Create</div>
+        </div>
+    </header>
+
+    <div class="text-center page-middle">
+        <button class="middle-btn" id="allPostBtn" onclick="location.href='./html/postslist.html'">All Posts</button>
+        <button class="middle-btn" id="createPostBtn" data-toggle="modal" data-target="#createPostModal">Creat Post</button>
+    </div>
+
+
+
+<!-- Modals START -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Get Started</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="signupModalname" class="col-form-label">Name</label>
+                <input type="text" class="form-control input-background" id="signupModalname" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="signupModalusername" class="col-form-label">Username</label>
+                <input type="text" class="form-control input-background" id="signupModalusername" placeholder="Enter your username" required>
+              </div>
+              <div class="form-group">
+                <label for="signupModalpassword" class="col-form-label">Password</label>
+                <input type="password" class="form-control input-background" id="signupModalpassword" placeholder="Enter your password" required>
+              </div>
+              <div class="form-group">
+                <label for="signupModalconfirm-password" class="col-form-label">Confirm Password</label>
+                <input type="password" class="form-control input-background" id="signupModalconfirm-password" placeholder="Re-enter your password" required>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-success form-control">Sign Up</button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signinModalLabel">Welcome Back!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="signinModalname" class="col-form-label">Username</label>
+                <input type="text" class="form-control input-background" id="signinModalname" placeholder="Enter your username" required>
+              </div>
+              <div class="form-group">
+                <label for="signinModalpassword" class="col-form-label">Password</label>
+                <input type="password" class="form-control input-background" id="signinModalpassword" placeholder="Enter your password" required>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-success form-control">Sign In</button>
+                  <div class="text-center">Not a member? <a href="#signupModal" onclick="openSignUpModal()">Sign Up</a></div>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createPostModalLabel">Pen Your Post</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="titleModal" class="col-form-label">Title</label>
+                <input type="text" class="form-control input-background" id="titleModal" placeholder="Enter title of your post" required>
+              </div>
+              <div class="form-group">
+                <label for="contentModal" class="col-form-label">Contents</label>
+                  <textarea type="password" class="form-control input-background" id="contentModal" placeholder="Enter the content of your post" required></textarea>
+              </div>
+              <div class="text-center ">
+                <button type="submit" class="btn btn-success">Create</button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Modals END -->
+
+<script src="./scripts/common.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
