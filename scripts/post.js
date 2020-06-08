@@ -39,9 +39,10 @@ window.onload = function () {
 
 }
 
-
+var user_liked = 0;
 function liked() {
-    document.getElementById('like-content').innerHTML = '1 person likes this!';
+    user_liked++;
+    document.getElementById('like-content').innerHTML = user_liked +' person likes this!';
     document.getElementById('like-name').innerHTML = '<i class="fa fa-thumbs-up" aria-hidden="true"></i> Liked';
 }
 
