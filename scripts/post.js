@@ -20,7 +20,7 @@ window.onload = function () {
             '<p id="user-content">'+ data.content_body +'</p>'+
             '<button class="btn-danger" onclick="liked()" id="like-name">'+
                 '<i class="fa fa-thumbs-up" aria-hidden="true"></i>'+
-                '<span >Like</span>'+
+                '<span> Like</span>'+
             '</button>'+
             '<p id="like-content">Be the first one to like this!</p>'+
         '</div>'+
