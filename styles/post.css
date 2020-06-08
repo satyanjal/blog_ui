@@ -4,7 +4,6 @@
     }
 }
 
-
 .name-edit {
     height: 70px;
 }
@@ -22,4 +21,20 @@ p {
     text-align:center;
     font-weight: bold;
     font-size: large;
+}
+
+.name-alignment {
+    margin-top:20px;
+    font-family: San-serif;
+    font-size: 20px;
+}
+
+.textarea-design {
+    height: 100px;
+    width: 500px;
+}
+
+.user-edit-border {
+    border-color: pink;
+    border-style: solid;
 }
