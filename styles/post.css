@@ -1,0 +1,25 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1350px;
+    }
+}
+
+
+.name-edit {
+    height: 70px;
+}
+
+.comments-box {
+    border-color: #c5c5c5;
+    border-width: 10px 20px;
+}
+
+p {
+    margin-left: 5px;
+}
+
+.header-design {
+    text-align:center;
+    font-weight: bold;
+    font-size: large;
+}
